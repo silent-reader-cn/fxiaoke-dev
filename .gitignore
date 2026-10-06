@@ -11,3 +11,17 @@ js/
 # 本机工作状态（项目记忆、项目级技能），不随仓库发布
 .workbuddy-ai/
 .workbuddy/
+
+# ⚠️ 真实凭据一律不入库。示例脚本从环境变量或 _local/ 读取。
+_local/
+credentials.json
+credentials.*.json
+# 但凭据**模板**要入库，方便别人照抄
+!examples/credentials.example.json
+.env
+.env.*
+
+# 示例运行产生的 token 缓存
+examples/.cache/
+examples/objects.json
+examples/describe.json

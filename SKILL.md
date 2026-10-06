@@ -205,28 +205,79 @@ PY="<你的 python3 路径>"
 
 ---
 
-## 五、常见排错速查
+## 五、可运行示例（`examples/`）
+
+`examples/` 下有一套**只依赖标准库**的最小可用代码，已用真实租户跑通：
+
+| 脚本 | 作用 |
+| :--- | :--- |
+| `fxiaoke_client.py` / `fxiaoke_client.js` | 客户端封装：token 缓存（6600s）、自动 `thirdTraceId`、三个请求头 |
+| `01_get_token.py` | 客户端凭证模式取 accessToken |
+| `02_object_list.py` | 查对象列表（apiName → 中文显示名） |
+| `03_query_objects.py` | 按条件查询对象列表 |
+| `04_object_describe.py` | 查对象描述（字段清单） |
+| `05_create_object.py` | 创建对象（**默认 dry-run**） |
+| `06_approval_action.py` | 审批流完成/拒绝（**默认 dry-run**） |
+| `07_invalid_and_delete.py` | 作废 → 删除（**默认 dry-run**） |
+
+```bash
+export FX_APP_ID=... FX_APP_SECRET=... FX_PERMANENT_CODE=... FX_USER_ID=1000
+PY="<你的 python3 路径>"
+"$PY" examples/01_get_token.py
+"$PY" examples/02_object_list.py --grep 客户
+"$PY" examples/05_create_object.py --object AccountObj --field name=示例客户   # 不加 --yes 不发送
+```
+
+**写操作默认只打印报文不发送**，加 `--yes` 才真正提交。凭据走环境变量或
+`credentials.json`（已被 `.gitignore` 覆盖），**不要写进代码**。
+
+> 📌 **实测踩坑清单见 [`examples/README.md`](./examples/README.md#实测踩坑文档没写或与文档不符)**。
+> 其中几条比较关键：`x-fs-userid` 必须是**应用可见范围内**的数字员工ID
+> （传 `openUserId` 报 10006，不在范围报 `20021 userScopeNotSupport`）；
+> **全局返回码表与实际返回对不上**（只认 `errorCode`，原因看 `errorMessage`）；
+> 手册的对象中文名未必等于你租户里的显示名，对接前先跑 `02_object_list.py`。
+
+---
+
+## 六、常见排错速查
 
 | 现象 | 原因与处理 |
 | :--- | :--- |
-| `errorCode 20016` / token 失效 | token 有效期 7200 秒，缓存 6600 秒后必须刷新；本接口不可并发调用 |
+| `10006` 缺参数 | 实测多为 `X-fs-userId` 缺失或格式非法（**别照文档表理解成缺 scope**）；`openUserId` 不能当 `x-fs-userid` |
+| `20021 userScopeNotSupport` | 该员工不在**应用的可见范围**内。换一个范围内的员工ID（文档表格把 20021 写成「app 停用」，与实际不符） |
+| `20017 corpAccessToken为必填项` | `x-fs-userid` 传了空值，网关退回旧版校验。补上员工ID |
+| `20016` / token 失效 | token 有效期 7200 秒，**缓存 6600 秒后必须刷新**；该接口不可并发调用 |
 | 401 / 鉴权失败 | 检查 `authorization` 是否漏了 `Bearer ` 后的**空格**；`x-fs-ea`、`x-fs-userid` 是否齐全 |
 | 员工 ID 对不上 | 新版传参默认不做 FSUID 转换；要转则 body 加 `{"convertUserId": true}` |
 | 请求被拒 / 限流 | 每个 URL 必须带**唯一**的 `thirdTraceId`（UUID v4）；查频次限制说明 |
+| 删除返回 0 却没删掉 | `data/invalid` **只作废单个 id**（传数组只生效第一个），未作废的记录 `data/delete` 会**静默跳过**。逐个作废后再删，删完再查一次 |
 | 查不到数据 | 见 [`references/04_faq/人员对象查不到数据.md`](./references/04_faq/人员对象查不到数据.md) |
 | 无此操作的数据权限 | 见 [`references/04_faq/无此操作的数据权限.md`](./references/04_faq/无此操作的数据权限.md) |
 | 列表翻页翻不到底 | 见 [`references/04_faq/深翻页文档.md`](./references/04_faq/深翻页文档.md) |
 
-全局错误码表：`references/01_start/基础说明/全局返回码.md`
+> ⚠️ **不要照 `references/01_start/基础说明/全局返回码.md` 的表反推原因** ——
+> 实测该表与线上返回多处不符（10006 / 20017 / 20021 都对不上）。
+> 以响应里的 `errorMessage` / `errorDescription` 为准，代码里只判 `errorCode`。
 
 ---
 
-## 六、目录结构
+## 七、目录结构
 
 ```
 fxiaoke-dev/
-├── SKILL.md                       # 本文件：接入 + 三块导航 + 检索
+├── SKILL.md                       # 本文件：接入 + 三块导航 + 检索 + 示例
 ├── README.md
+├── examples/                      # 可运行示例（Python + Node，零依赖）
+│   ├── README.md                  #   用法 + 实测踩坑清单
+│   ├── fxiaoke_client.py / .js    #   客户端封装
+│   ├── 01_get_token.py            #   取 token
+│   ├── 02_object_list.py          #   对象列表（apiName → 中文名）
+│   ├── 03_query_objects.py        #   条件查询
+│   ├── 04_object_describe.py      #   字段清单
+│   ├── 05_create_object.py        #   创建（dry-run）
+│   ├── 06_approval_action.py      #   审批动作（dry-run）
+│   ├── 07_invalid_and_delete.py   #   作废→删除（dry-run）
+│   └── credentials.example.json   #   凭据模板（真实凭据不入库）
 ├── references/
 │   ├── _INDEX.md                  # 1,307 篇总索引
 │   ├── 01_start/                  # 【块三】快速开始与接入（15 篇）
@@ -252,7 +303,7 @@ fxiaoke-dev/
 
 ---
 
-## 七、语料怎么更新
+## 八、语料怎么更新
 
 ```bash
 # 1) 重新提取路由（站点改版后必做；会自动下载最新的 app-*.js）
@@ -276,7 +327,7 @@ python tools/fetch_manual.py --prune
 
 ---
 
-## 八、免责声明
+## 九、免责声明
 
 本 skill 内容整理自纷享销客（ShareCRM）官方公开文档，仅供学习、对接与二次开发参考。
 接口名称、参数、返回结构及字段说明等版权归纷享销客所有。

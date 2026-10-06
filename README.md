@@ -82,6 +82,50 @@ curl -X POST 'https://open.fxiaoke.com/cgi/crm/v2/data/create?thirdTraceId=<新�
 
 ---
 
+## 可运行示例
+
+[`examples/`](./examples/) 下有一套**只依赖标准库**的最小可用代码（Python + Node），
+已用真实租户跑通。写操作**默认 dry-run**，加 `--yes` 才真正提交。
+
+```bash
+export FX_APP_ID=... FX_APP_SECRET=... FX_PERMANENT_CODE=... FX_USER_ID=1000
+PY="<你的 python3 路径>"
+
+"$PY" examples/01_get_token.py                       # 取 accessToken
+"$PY" examples/02_object_list.py --grep 客户           # 对象清单（apiName → 中文名）
+"$PY" examples/03_query_objects.py --object AccountObj --limit 5
+"$PY" examples/04_object_describe.py --object AccountObj --grep 电话
+"$PY" examples/05_create_object.py --object AccountObj --field name=示例客户  # 不发送
+```
+
+| 脚本 | 作用 |
+| :--- | :--- |
+| `fxiaoke_client.py` / `.js` | 客户端封装：token 缓存（6600s）、自动 `thirdTraceId`、三个请求头 |
+| `01_get_token.py` | 客户端凭证模式取 accessToken |
+| `02_object_list.py` | 查对象列表 |
+| `03_query_objects.py` | 按条件查询 |
+| `04_object_describe.py` | 查字段清单 |
+| `05_create_object.py` | 创建对象（dry-run） |
+| `06_approval_action.py` | 审批流动作（dry-run） |
+| `07_invalid_and_delete.py` | 作废 → 删除（dry-run） |
+
+**实测踩坑**（文档没写或与文档不符，都是拿真实租户跑出来的）：
+
+- `x-fs-userid` 必须是**应用可见范围内**的数字员工ID。传 `openUserId` 报 `10006`，
+  不在范围内报 `20021 userScopeNotSupport`，留空报 `20017`。
+- **全局返回码表与实际返回对不上**（10006 / 20017 / 20021 都对不上），
+  只认 `errorCode`，具体原因看 `errorMessage`。
+- token 响应除 `accessToken` 外还返回 `access_token` / `expires_in` / `token_type`。
+- `object/list` 用 camelCase，`object/describe` 用 snake_case。
+- `create` 返回的记录 id 在**响应顶层 `dataId`**。
+- `data/invalid` **只作废单个 id**；未作废的记录 `data/delete` 会**静默跳过**（返回 0 却没删）。
+- **手册的对象清单 ≠ 你租户的对象清单**（实测某租户 176 个 vs 手册 211 个，仅重合 52 个；
+  19 个对象中文名不一致，如 `ProductObj` 手册标「商品」、租户实际是「产品」）。
+
+完整清单见 [`examples/README.md`](./examples/README.md#实测踩坑文档没写或与文档不符)。
+
+---
+
 ## 检索用法
 
 ```bash
@@ -125,7 +169,12 @@ PY="<你的 python3 路径>"
 
 ```
 fxiaoke-dev/
-├── SKILL.md                       # AI Skill 定义：接入 + 导航 + 检索
+├── SKILL.md                       # AI Skill 定义：接入 + 导航 + 检索 + 示例
+├── examples/                      # 可运行示例（Python + Node，零依赖）
+│   ├── README.md                  #   用法 + 实测踩坑清单
+│   ├── fxiaoke_client.py / .js
+│   ├── 01_get_token.py … 07_invalid_and_delete.py
+│   └── credentials.example.json   #   凭据模板（真实凭据不入库）
 ├── references/
 │   ├── _INDEX.md                  # 1,307 篇总索引
 │   ├── 01_start/<分类>/<标题>.md            # 15 篇
