@@ -1,0 +1,1800 @@
+{
+ "/start/": {
+  "items": [
+   {
+    "text": "快速开始",
+    "collapsed": false,
+    "prefix": "quickstart",
+    "items": "auto"
+   },
+   {
+    "text": "OAuth授权认证",
+    "collapsed": false,
+    "prefix": "auth",
+    "items": "auto"
+   },
+   {
+    "text": "接口调用示例",
+    "collapsed": false,
+    "prefix": "example",
+    "items": "auto"
+   },
+   {
+    "text": "基础说明",
+    "collapsed": false,
+    "prefix": "guide",
+    "items": "auto"
+   },
+   {
+    "text": "免登功能",
+    "collapsed": false,
+    "prefix": "login",
+    "items": "auto"
+   }
+  ],
+  "prefix": "/start/"
+ },
+ "/object/": {
+  "items": [
+   {
+    "text": "自定义能力",
+    "collapsed": false,
+    "prefix": "CustomCapabilities",
+    "items": [
+     {
+      "text": "自定义对象",
+      "collapsed": false,
+      "prefix": "CustomObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "商品与产品",
+    "collapsed": false,
+    "prefix": "CommoditiesAndProducts",
+    "items": [
+     {
+      "text": "商品",
+      "collapsed": false,
+      "prefix": "ProductObj",
+      "items": "auto"
+     },
+     {
+      "text": "产品",
+      "collapsed": false,
+      "prefix": "SPUObj",
+      "items": "auto"
+     },
+     {
+      "text": "子产品分组",
+      "collapsed": false,
+      "prefix": "SubProductCatalogObj",
+      "items": "auto"
+     },
+     {
+      "text": "子产品明细",
+      "collapsed": false,
+      "prefix": "SubProductObj",
+      "items": "auto"
+     },
+     {
+      "text": "产品单位",
+      "collapsed": false,
+      "prefix": "UnitInfoObj",
+      "items": "auto"
+     },
+     {
+      "text": "产品分组",
+      "collapsed": false,
+      "prefix": "ProductGroupObj",
+      "items": "auto"
+     },
+     {
+      "text": "产品组合",
+      "collapsed": false,
+      "prefix": "BomCoreObj",
+      "items": "auto"
+     },
+     {
+      "text": "可售产品",
+      "collapsed": false,
+      "prefix": "AvailableProductObj",
+      "items": "auto"
+     },
+     {
+      "text": "可售范围",
+      "collapsed": false,
+      "prefix": "AvailableRangeObj",
+      "items": "auto"
+     },
+     {
+      "text": "商品条码",
+      "collapsed": false,
+      "prefix": "FMCGSerialNumberObj",
+      "items": "auto"
+     },
+     {
+      "text": "商品条码状态",
+      "collapsed": false,
+      "prefix": "FMCGSerialNumberStatusObj",
+      "items": "auto"
+     },
+     {
+      "text": "Bom",
+      "collapsed": false,
+      "prefix": "BOMObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "产品约束与属性",
+    "collapsed": false,
+    "prefix": "ProductConstraintsAndAttributes",
+    "items": [
+     {
+      "text": "产品约束",
+      "collapsed": false,
+      "prefix": "ProductConstraintObj",
+      "items": "auto"
+     },
+     {
+      "text": "产品属性约束",
+      "collapsed": false,
+      "prefix": "BomAttributeConstraintObj",
+      "items": "auto"
+     },
+     {
+      "text": "产品约束明细",
+      "collapsed": false,
+      "prefix": "ProductConstraintLinesObj",
+      "items": "auto"
+     },
+     {
+      "text": "产品属性约束明细",
+      "collapsed": false,
+      "prefix": "BomAttributeConstraintLinesObj",
+      "items": "auto"
+     },
+     {
+      "text": "属性",
+      "collapsed": false,
+      "prefix": "AttributeObj",
+      "items": "auto"
+     },
+     {
+      "text": "属性值",
+      "collapsed": false,
+      "prefix": "AttributeValueObj",
+      "items": "auto"
+     },
+     {
+      "text": "多单位",
+      "collapsed": false,
+      "prefix": "MultiUnitRelatedObj",
+      "items": "auto"
+     },
+     {
+      "text": "规格表",
+      "collapsed": false,
+      "prefix": "SpecificationObj",
+      "items": "auto"
+     },
+     {
+      "text": "规格值表",
+      "collapsed": false,
+      "prefix": "SpecificationValueObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "客户与联系人",
+    "collapsed": false,
+    "prefix": "CustomersAndContacts",
+    "items": [
+     {
+      "text": "客户",
+      "collapsed": false,
+      "prefix": "AccountObj",
+      "items": "auto"
+     },
+     {
+      "text": "联系人",
+      "collapsed": false,
+      "prefix": "ContactObj",
+      "items": "auto"
+     },
+     {
+      "text": "客户地址",
+      "collapsed": false,
+      "prefix": "AccountAddrObj",
+      "items": "auto"
+     },
+     {
+      "text": "可售客户",
+      "collapsed": false,
+      "prefix": "AvailableAccountObj",
+      "items": "auto"
+     },
+     {
+      "text": "客户主数据",
+      "collapsed": false,
+      "prefix": "AccountMainDataObj",
+      "items": "auto"
+     },
+     {
+      "text": "客户树",
+      "collapsed": false,
+      "prefix": "AccountTreeRelationObj",
+      "items": "auto"
+     },
+     {
+      "text": "客户账户余额",
+      "collapsed": false,
+      "prefix": "NewCustomerAccountObj",
+      "items": "auto"
+     },
+     {
+      "text": "合作伙伴",
+      "collapsed": false,
+      "prefix": "PartnerObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "销售与订单",
+    "collapsed": false,
+    "prefix": "SalesAndOrders",
+    "items": [
+     {
+      "text": "销售订单",
+      "collapsed": false,
+      "prefix": "SalesOrderObj",
+      "items": "auto"
+     },
+     {
+      "text": "订单产品",
+      "collapsed": false,
+      "prefix": "SalesOrderProductObj",
+      "items": "auto"
+     },
+     {
+      "text": "销售记录",
+      "collapsed": false,
+      "prefix": "ActiveRecordObj",
+      "items": "auto"
+     },
+     {
+      "text": "销售合同产品",
+      "collapsed": false,
+      "prefix": "SaleContractLineObj",
+      "items": "auto"
+     },
+     {
+      "text": "预设销售合同",
+      "collapsed": false,
+      "prefix": "SaleContractObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "商机与线索",
+    "collapsed": false,
+    "prefix": "OpportunitiesAndLeads",
+    "items": [
+     {
+      "text": "商机",
+      "collapsed": false,
+      "prefix": "OpportunityObj",
+      "items": "auto"
+     },
+     {
+      "text": "商机2.0",
+      "collapsed": false,
+      "prefix": "NewOpportunityObj",
+      "items": "auto"
+     },
+     {
+      "text": "商机2.0明细",
+      "collapsed": false,
+      "prefix": "NewOpportunityLinesObj",
+      "items": "auto"
+     },
+     {
+      "text": "商机联系人",
+      "collapsed": false,
+      "prefix": "NewOpportunityContactsObj",
+      "items": "auto"
+     },
+     {
+      "text": "线索",
+      "collapsed": false,
+      "prefix": "LeadsObj",
+      "items": "auto"
+     },
+     {
+      "text": "线索转换日志",
+      "collapsed": false,
+      "prefix": "LeadsTransferLogObj",
+      "items": "auto"
+     },
+     {
+      "text": "线索跟进记录",
+      "collapsed": false,
+      "prefix": "LeadsFlowRecordObj",
+      "items": "auto"
+     },
+     {
+      "text": "老商机流程",
+      "collapsed": false,
+      "prefix": "SaleActionNewObj",
+      "items": "auto"
+     },
+     {
+      "text": "竞争对手",
+      "collapsed": false,
+      "prefix": "CompetitorObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "报价与价格",
+    "collapsed": false,
+    "prefix": "QuotationsAndPricing",
+    "items": [
+     {
+      "text": "报价单",
+      "collapsed": false,
+      "prefix": "QuoteObj",
+      "items": "auto"
+     },
+     {
+      "text": "报价单明细",
+      "collapsed": false,
+      "prefix": "QuoteLinesObj",
+      "items": "auto"
+     },
+     {
+      "text": "价目表",
+      "collapsed": false,
+      "prefix": "PriceBookObj",
+      "items": "auto"
+     },
+     {
+      "text": "价目表明细",
+      "collapsed": false,
+      "prefix": "PriceBookProductObj",
+      "items": "auto"
+     },
+     {
+      "text": "可售价目表",
+      "collapsed": false,
+      "prefix": "AvailablePriceBookObj",
+      "items": "auto"
+     },
+     {
+      "text": "价目表适用客户",
+      "collapsed": false,
+      "prefix": "PriceBookAccountObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "库存与仓储",
+    "collapsed": false,
+    "prefix": "InventoryAndWarehousing",
+    "items": [
+     {
+      "text": "库存",
+      "collapsed": false,
+      "prefix": "StockObj",
+      "items": "auto"
+     },
+     {
+      "text": "批次库存",
+      "collapsed": false,
+      "prefix": "BatchStockObj",
+      "items": "auto"
+     },
+     {
+      "text": "ERP库存",
+      "collapsed": false,
+      "prefix": "ErpStockObj",
+      "items": "auto"
+     },
+     {
+      "text": "出入库明细",
+      "collapsed": false,
+      "prefix": "StockDetailsObj",
+      "items": "auto"
+     },
+     {
+      "text": "仓库",
+      "collapsed": false,
+      "prefix": "WarehouseObj",
+      "items": "auto"
+     },
+     {
+      "text": "ERP仓库",
+      "collapsed": false,
+      "prefix": "ErpWarehouseObj",
+      "items": "auto"
+     },
+     {
+      "text": "入库单",
+      "collapsed": false,
+      "prefix": "GoodsReceivedNoteObj",
+      "items": "auto"
+     },
+     {
+      "text": "入库单产品",
+      "collapsed": false,
+      "prefix": "GoodsReceivedNoteProductObj",
+      "items": "auto"
+     },
+     {
+      "text": "出库单",
+      "collapsed": false,
+      "prefix": "OutboundDeliveryNoteObj",
+      "items": "auto"
+     },
+     {
+      "text": "出库单产品",
+      "collapsed": false,
+      "prefix": "OutboundDeliveryNoteProductObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "盘点与调拨",
+    "collapsed": false,
+    "prefix": "StockCountingAndTransfers",
+    "items": [
+     {
+      "text": "盘点单",
+      "collapsed": false,
+      "prefix": "StockCheckNoteObj",
+      "items": "auto"
+     },
+     {
+      "text": "盘点单产品",
+      "collapsed": false,
+      "prefix": "StockCheckNoteProductObj",
+      "items": "auto"
+     },
+     {
+      "text": "调拨单",
+      "collapsed": false,
+      "prefix": "RequisitionNoteObj",
+      "items": "auto"
+     },
+     {
+      "text": "调拨单产品",
+      "collapsed": false,
+      "prefix": "RequisitionNoteProductObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "领料与退料",
+    "collapsed": false,
+    "prefix": "MaterialIssueAndReturns",
+    "items": [
+     {
+      "text": "领料单",
+      "collapsed": false,
+      "prefix": "ReceiveMaterialBillObj",
+      "items": "auto"
+     },
+     {
+      "text": "领料单产品",
+      "collapsed": false,
+      "prefix": "ReceiveMaterialBillProductObj",
+      "items": "auto"
+     },
+     {
+      "text": "退料单",
+      "collapsed": false,
+      "prefix": "RefundMaterialBillObj",
+      "items": "auto"
+     },
+     {
+      "text": "退料单产品",
+      "collapsed": false,
+      "prefix": "RefundMaterialBillProductObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "采购管理",
+    "collapsed": false,
+    "prefix": "PurchasingManagement",
+    "items": [
+     {
+      "text": "采购订单",
+      "collapsed": false,
+      "prefix": "PurchaseOrderObj",
+      "items": "auto"
+     },
+     {
+      "text": "采购订单产品",
+      "collapsed": false,
+      "prefix": "PurchaseOrderProductObj",
+      "items": "auto"
+     },
+     {
+      "text": "采购退货申请",
+      "collapsed": false,
+      "prefix": "PurchaseReturnNoteObj",
+      "items": "auto"
+     },
+     {
+      "text": "采购退货申请产品",
+      "collapsed": false,
+      "prefix": "PurchaseReturnNoteProductObj",
+      "items": "auto"
+     },
+     {
+      "text": "经销商采购退货申请",
+      "collapsed": false,
+      "prefix": "DealerReturnApplicationObj",
+      "items": "auto"
+     },
+     {
+      "text": "经销商采购退货产品",
+      "collapsed": false,
+      "prefix": "DealerReturnProductObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "物流与发货",
+    "collapsed": false,
+    "prefix": "LogisticsAndShipment",
+    "items": [
+     {
+      "text": "发货单",
+      "collapsed": false,
+      "prefix": "DeliveryNoteObj",
+      "items": "auto"
+     },
+     {
+      "text": "发货单产品",
+      "collapsed": false,
+      "prefix": "DeliveryNoteProductObj",
+      "items": "auto"
+     },
+     {
+      "text": "退换货单",
+      "collapsed": false,
+      "prefix": "ExchangeReturnNoteObj",
+      "items": "auto"
+     },
+     {
+      "text": "退换货单产品",
+      "collapsed": false,
+      "prefix": "ExchangeReturnNoteProductObj",
+      "items": "auto"
+     },
+     {
+      "text": "退货单",
+      "collapsed": false,
+      "prefix": "ReturnedGoodsInvoiceObj",
+      "items": "auto"
+     },
+     {
+      "text": "退货单关联产品",
+      "collapsed": false,
+      "prefix": "ReturnedGoodsInvoiceProductObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "退款管理",
+    "collapsed": false,
+    "prefix": "RefundManagement",
+    "items": [
+     {
+      "text": "退款单",
+      "collapsed": false,
+      "prefix": "RefundObj",
+      "items": "auto"
+     },
+     {
+      "text": "退款",
+      "collapsed": false,
+      "prefix": "FundReturnBackObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "供应商管理",
+    "collapsed": false,
+    "prefix": "SupplierManagement",
+    "items": [
+     {
+      "text": "供应商",
+      "collapsed": false,
+      "prefix": "SupplierObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "财务与回款",
+    "collapsed": false,
+    "prefix": "FinanceAndPaymentCollection",
+    "items": [
+     {
+      "text": "财务信息",
+      "collapsed": false,
+      "prefix": "AccountFinInfoObj",
+      "items": "auto"
+     },
+     {
+      "text": "回款",
+      "collapsed": false,
+      "prefix": "PaymentObj",
+      "items": "auto"
+     },
+     {
+      "text": "回款明细",
+      "collapsed": false,
+      "prefix": "OrderPaymentObj",
+      "items": "auto"
+     },
+     {
+      "text": "回款计划",
+      "collapsed": false,
+      "prefix": "PaymentPlanObj",
+      "items": "auto"
+     },
+     {
+      "text": "信用",
+      "collapsed": false,
+      "prefix": "CreditFileObj",
+      "items": "auto"
+     },
+     {
+      "text": "账户",
+      "collapsed": false,
+      "prefix": "FundAccountObj",
+      "items": "auto"
+     },
+     {
+      "text": "账户收支流水",
+      "collapsed": false,
+      "prefix": "AccountTransactionFlowObj",
+      "items": "auto"
+     },
+     {
+      "text": "账户余额",
+      "collapsed": false,
+      "prefix": "CustomerAccountObj",
+      "items": "auto"
+     },
+     {
+      "text": "预存款",
+      "collapsed": false,
+      "prefix": "PrepayDetailObj",
+      "items": "auto"
+     },
+     {
+      "text": "费用预算",
+      "collapsed": false,
+      "prefix": "TPMBudgetAccountObj",
+      "items": "auto"
+     },
+     {
+      "text": "费用明细",
+      "collapsed": false,
+      "prefix": "FeeDetailObj",
+      "items": "auto"
+     },
+     {
+      "text": "交易事件",
+      "collapsed": false,
+      "prefix": "TransactionEventObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "开票与结算",
+    "collapsed": false,
+    "prefix": "InvoicingAndSettlement",
+    "items": [
+     {
+      "text": "开票申请",
+      "collapsed": false,
+      "prefix": "InvoiceApplicationObj",
+      "items": "auto"
+     },
+     {
+      "text": "开票申请明细",
+      "collapsed": false,
+      "prefix": "InvoiceApplicationLinesObj",
+      "items": "auto"
+     },
+     {
+      "text": "银行流水标准",
+      "collapsed": false,
+      "prefix": "BankStatementObj",
+      "items": "auto"
+     },
+     {
+      "text": "虚拟账户标准",
+      "collapsed": false,
+      "prefix": "VirtualAccountObj",
+      "items": "auto"
+     },
+     {
+      "text": "到款认领标准",
+      "collapsed": false,
+      "prefix": "ReceivedPaymentObj",
+      "items": "auto"
+     },
+     {
+      "text": "结算单标准",
+      "collapsed": false,
+      "prefix": "SettlementObj",
+      "items": "auto"
+     },
+     {
+      "text": "结算单明细标准",
+      "collapsed": false,
+      "prefix": "SettlementDetailObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "返利管理",
+    "collapsed": false,
+    "prefix": "RebateManagement",
+    "items": [
+     {
+      "text": "返利",
+      "collapsed": false,
+      "prefix": "RebateObj",
+      "items": "auto"
+     },
+     {
+      "text": "返利单",
+      "collapsed": false,
+      "prefix": "RebateIncomeDetailObj",
+      "items": "auto"
+     },
+     {
+      "text": "返利支出",
+      "collapsed": false,
+      "prefix": "RebateOutcomeDetailObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "促销管理",
+    "collapsed": false,
+    "prefix": "PromotionManagement",
+    "items": [
+     {
+      "text": "促销",
+      "collapsed": false,
+      "prefix": "PromotionObj",
+      "items": "auto"
+     },
+     {
+      "text": "促销产品",
+      "collapsed": false,
+      "prefix": "PromotionProductObj",
+      "items": "auto"
+     },
+     {
+      "text": "促销规则",
+      "collapsed": false,
+      "prefix": "PromotionRuleObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "合同管理",
+    "collapsed": false,
+    "prefix": "ContractManagement",
+    "items": [
+     {
+      "text": "合同对象",
+      "collapsed": false,
+      "prefix": "ContractObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "设备与资产",
+    "collapsed": false,
+    "prefix": "DevicesAndAssets",
+    "items": [
+     {
+      "text": "设备",
+      "collapsed": false,
+      "prefix": "DeviceObj",
+      "items": "auto"
+     },
+     {
+      "text": "设备配件规格关系",
+      "collapsed": false,
+      "prefix": "DeviceComponentsObj",
+      "items": "auto"
+     },
+     {
+      "text": "设备资产BOM",
+      "collapsed": false,
+      "prefix": "DevicePartObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "工单与服务",
+    "collapsed": false,
+    "prefix": "WorkOrdersAndServices",
+    "items": [
+     {
+      "text": "工单",
+      "collapsed": false,
+      "prefix": "CasesObj",
+      "items": "auto"
+     },
+     {
+      "text": "工单设备",
+      "collapsed": false,
+      "prefix": "CasesDeviceObj",
+      "items": "auto"
+     },
+     {
+      "text": "工单多次签到记录",
+      "collapsed": false,
+      "prefix": "CasesCheckinsObj",
+      "items": "auto"
+     },
+     {
+      "text": "服务请求",
+      "collapsed": false,
+      "prefix": "ServiceRequestObj",
+      "items": "auto"
+     },
+     {
+      "text": "服务评价",
+      "collapsed": false,
+      "prefix": "AppraiseObj",
+      "items": "auto"
+     },
+     {
+      "text": "服务信息",
+      "collapsed": false,
+      "prefix": "EngineerInfoObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "备件管理",
+    "collapsed": false,
+    "prefix": "SparePartsManagement",
+    "items": [
+     {
+      "text": "备件发运单",
+      "collapsed": false,
+      "prefix": "SparePartsDeliveryObj",
+      "items": "auto"
+     },
+     {
+      "text": "备件发运单明细",
+      "collapsed": false,
+      "prefix": "SparePartsDeliveryDetailObj",
+      "items": "auto"
+     },
+     {
+      "text": "备件消耗",
+      "collapsed": false,
+      "prefix": "SparePartsConsumptionObj",
+      "items": "auto"
+     },
+     {
+      "text": "备件申请",
+      "collapsed": false,
+      "prefix": "SparePartsApplicationObj",
+      "items": "auto"
+     },
+     {
+      "text": "备件退运",
+      "collapsed": false,
+      "prefix": "SparePartsReturnObj",
+      "items": "auto"
+     },
+     {
+      "text": "备件维修任务",
+      "collapsed": false,
+      "prefix": "SparePartsMaintenanceTaskObj",
+      "items": "auto"
+     },
+     {
+      "text": "备件维修计划",
+      "collapsed": false,
+      "prefix": "SparePartsMaintenancePlanObj",
+      "items": "auto"
+     },
+     {
+      "text": "配件消耗明细",
+      "collapsed": false,
+      "prefix": "CasesAccessoryUseInfoObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "个人库管理",
+    "collapsed": false,
+    "prefix": "PersonalWarehouseManagement",
+    "items": [
+     {
+      "text": "个人库",
+      "collapsed": false,
+      "prefix": "EmployeeWarehouseObj",
+      "items": "auto"
+     },
+     {
+      "text": "个人库明细",
+      "collapsed": false,
+      "prefix": "EmployeeWarehouseDetailObj",
+      "items": "auto"
+     },
+     {
+      "text": "个人库调拨单",
+      "collapsed": false,
+      "prefix": "AccessoryExchangeObj",
+      "items": "auto"
+     },
+     {
+      "text": "个人库调整单",
+      "collapsed": false,
+      "prefix": "EmployeeWarehouseAdjustmentNoteObj",
+      "items": "auto"
+     },
+     {
+      "text": "个人库盘点单",
+      "collapsed": false,
+      "prefix": "IndividualStockCountingObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "会员管理",
+    "collapsed": false,
+    "prefix": "MembershipManagement",
+    "items": [
+     {
+      "text": "会员",
+      "collapsed": false,
+      "prefix": "MemberObj",
+      "items": "auto"
+     },
+     {
+      "text": "会员等级",
+      "collapsed": false,
+      "prefix": "MemberGradeObj",
+      "items": "auto"
+     },
+     {
+      "text": "会员积分明细",
+      "collapsed": false,
+      "prefix": "MemberIntegralDetailObj",
+      "items": "auto"
+     },
+     {
+      "text": "会员成长值明细",
+      "collapsed": false,
+      "prefix": "MemberGrowthValueDetailObj",
+      "items": "auto"
+     },
+     {
+      "text": "忠诚度计划",
+      "collapsed": false,
+      "prefix": "LoyaltyProgramObj",
+      "items": "auto"
+     },
+     {
+      "text": "会员管理",
+      "collapsed": false,
+      "prefix": "LoyaltyMemberObj",
+      "items": "auto"
+     },
+     {
+      "text": "等级分类",
+      "collapsed": false,
+      "prefix": "LoyaltyTierClassObj",
+      "items": "auto"
+     },
+     {
+      "text": "积分分类",
+      "collapsed": false,
+      "prefix": "LoyaltyPointTypeObj",
+      "items": "auto"
+     },
+     {
+      "text": "积分池",
+      "collapsed": false,
+      "prefix": "LoyaltyPointPoolObj",
+      "items": "auto"
+     },
+     {
+      "text": "积分明细",
+      "collapsed": false,
+      "prefix": "LoyaltyPointsDetailObj",
+      "items": "auto"
+     },
+     {
+      "text": "会员变动记录",
+      "collapsed": false,
+      "prefix": "LoyaltyMemberChangeRecordsObj",
+      "items": "auto"
+     },
+     {
+      "text": "会员等级",
+      "collapsed": false,
+      "prefix": "LoyaltyTierObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "营销与活动",
+    "collapsed": false,
+    "prefix": "MarketingAndActivities",
+    "items": [
+     {
+      "text": "市场活动",
+      "collapsed": false,
+      "prefix": "MarketingEventObj",
+      "items": "auto"
+     },
+     {
+      "text": "销售活动",
+      "collapsed": false,
+      "prefix": "SaleActionObj",
+      "items": "auto"
+     },
+     {
+      "text": "活动方案",
+      "collapsed": false,
+      "prefix": "TPMActivityObj",
+      "items": "auto"
+     },
+     {
+      "text": "活动方案项目",
+      "collapsed": false,
+      "prefix": "TPMActivityItemObj",
+      "items": "auto"
+     },
+     {
+      "text": "活动协议",
+      "collapsed": false,
+      "prefix": "TPMActivityAgreementObj",
+      "items": "auto"
+     },
+     {
+      "text": "活动协议项目",
+      "collapsed": false,
+      "prefix": "TPMActivityAgreementDetailObj",
+      "items": "auto"
+     },
+     {
+      "text": "活动举证",
+      "collapsed": false,
+      "prefix": "TPMActivityProofObj",
+      "items": "auto"
+     },
+     {
+      "text": "活动举证项目",
+      "collapsed": false,
+      "prefix": "TPMActivityProofDetailObj",
+      "items": "auto"
+     },
+     {
+      "text": "活动项目管理",
+      "collapsed": false,
+      "prefix": "TPMActivityDetailObj",
+      "items": "auto"
+     },
+     {
+      "text": "活动成员",
+      "collapsed": false,
+      "prefix": "CampaignMembersObj",
+      "items": "auto"
+     },
+     {
+      "text": "营销关键词",
+      "collapsed": false,
+      "prefix": "MarketingKeywordObj",
+      "items": "auto"
+     },
+     {
+      "text": "关键词投放计划",
+      "collapsed": false,
+      "prefix": "KeywordServingPlanObj",
+      "items": "auto"
+     },
+     {
+      "text": "关键词投放明细",
+      "collapsed": false,
+      "prefix": "TermServingLinesObj",
+      "items": "auto"
+     },
+     {
+      "text": "落地页",
+      "collapsed": false,
+      "prefix": "LandingPageObj",
+      "items": "auto"
+     },
+     {
+      "text": "营销推广来源",
+      "collapsed": false,
+      "prefix": "MarketingPromotionSourceObj",
+      "items": "auto"
+     },
+     {
+      "text": "广告投放明细",
+      "collapsed": false,
+      "prefix": "AdvertisingDetailsObj",
+      "items": "auto"
+     },
+     {
+      "text": "活动奖励发放明细",
+      "collapsed": false,
+      "prefix": "TPMActivityRewardDetailObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "微信生态",
+    "collapsed": false,
+    "prefix": "WechatEcosystem",
+    "items": [
+     {
+      "text": "微信粉丝",
+      "collapsed": false,
+      "prefix": "WechatFanObj",
+      "items": "auto"
+     },
+     {
+      "text": "企微好友",
+      "collapsed": false,
+      "prefix": "WechatFriendsRecordObj",
+      "items": "auto"
+     },
+     {
+      "text": "企业微信客户",
+      "collapsed": false,
+      "prefix": "WechatWorkExternalUserObj",
+      "items": "auto"
+     },
+     {
+      "text": "企微客户群",
+      "collapsed": false,
+      "prefix": "WechatGroupObj",
+      "items": "auto"
+     },
+     {
+      "text": "企微员工",
+      "collapsed": false,
+      "prefix": "WechatEmployeeObj",
+      "items": "auto"
+     },
+     {
+      "text": "企微客户群",
+      "collapsed": false,
+      "prefix": "WechatGroupUserObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "互联企业",
+    "collapsed": false,
+    "prefix": "InterconnectedEnterprise",
+    "items": [
+     {
+      "text": "互联企业",
+      "collapsed": false,
+      "prefix": "EnterpriseRelationObj",
+      "items": "auto"
+     },
+     {
+      "text": "互联用户",
+      "collapsed": false,
+      "prefix": "PublicEmployeeObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "组织与人员",
+    "collapsed": false,
+    "prefix": "OrganizationAndPersonnel",
+    "items": [
+     {
+      "text": "人员",
+      "collapsed": false,
+      "prefix": "PersonnelObj",
+      "items": "auto"
+     },
+     {
+      "text": "部门",
+      "collapsed": false,
+      "prefix": "DepartmentObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "项目管理",
+    "collapsed": false,
+    "prefix": "ProjectManagement",
+    "items": [
+     {
+      "text": "项目",
+      "collapsed": false,
+      "prefix": "ProjectObj",
+      "items": "auto"
+     },
+     {
+      "text": "项目阶段",
+      "collapsed": false,
+      "prefix": "ProjectStageObj",
+      "items": "auto"
+     },
+     {
+      "text": "任务",
+      "collapsed": false,
+      "prefix": "ProjectTaskObj",
+      "items": "auto"
+     },
+     {
+      "text": "工时记录",
+      "collapsed": false,
+      "prefix": "TimeSheetObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "外勤管理",
+    "collapsed": false,
+    "prefix": "FieldServiceManagement",
+    "items": [
+     {
+      "text": "高级外勤",
+      "collapsed": false,
+      "prefix": "CheckinsObj",
+      "items": "auto"
+     },
+     {
+      "text": "外勤图片",
+      "collapsed": false,
+      "prefix": "CheckinsImgObj",
+      "items": "auto"
+     },
+     {
+      "text": "人员拜访数据",
+      "collapsed": false,
+      "prefix": "UserVisitObj",
+      "items": "auto"
+     },
+     {
+      "text": "路线",
+      "collapsed": false,
+      "prefix": "VisitRouteObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "日程与日志",
+    "collapsed": false,
+    "prefix": "SchedulesAndJournals",
+    "items": [
+     {
+      "text": "日程",
+      "collapsed": false,
+      "prefix": "ScheduleObj",
+      "items": "auto"
+     },
+     {
+      "text": "日志",
+      "collapsed": false,
+      "prefix": "JournalObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "通信与记录",
+    "collapsed": false,
+    "prefix": "CommunicationAndRecords",
+    "items": [
+     {
+      "text": "通话记录",
+      "collapsed": false,
+      "prefix": "ServiceRecordObj",
+      "items": "auto"
+     },
+     {
+      "text": "电销记录",
+      "collapsed": false,
+      "prefix": "TelesalesRecordObj",
+      "items": "auto"
+     },
+     {
+      "text": "邮件",
+      "collapsed": false,
+      "prefix": "MailObj",
+      "items": "auto"
+     },
+     {
+      "text": "工作圈回复",
+      "collapsed": false,
+      "prefix": "FeedReplyObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "知识与内容",
+    "collapsed": false,
+    "prefix": "KnowledgeAndContent",
+    "items": [
+     {
+      "text": "知识文章",
+      "collapsed": false,
+      "prefix": "KnowledgeArticleObj",
+      "items": "auto"
+     },
+     {
+      "text": "知识条目",
+      "collapsed": false,
+      "prefix": "entry",
+      "items": "auto"
+     },
+     {
+      "text": "RAG搜索",
+      "collapsed": false,
+      "prefix": "rag",
+      "items": "auto"
+     },
+     {
+      "text": "权限查询",
+      "collapsed": false,
+      "prefix": "permission",
+      "items": "auto"
+     },
+     {
+      "text": "可见空间与文件夹",
+      "collapsed": false,
+      "prefix": "spaceFolder",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "行为与访客",
+    "collapsed": false,
+    "prefix": "BehaviorAndVisitors",
+    "items": [
+     {
+      "text": "行为记录",
+      "collapsed": false,
+      "prefix": "BehaviorRecordObj",
+      "items": "auto"
+     },
+     {
+      "text": "用户行为记录",
+      "collapsed": false,
+      "prefix": "UserBehaviorRecordsObj",
+      "items": "auto"
+     },
+     {
+      "text": "访客信息",
+      "collapsed": false,
+      "prefix": "WebImVisitorObj",
+      "items": "auto"
+     },
+     {
+      "text": "留言",
+      "collapsed": false,
+      "prefix": "LeaveMessageObj",
+      "items": "auto"
+     },
+     {
+      "text": "客服会话",
+      "collapsed": false,
+      "prefix": "CustomerServiceSessionObj",
+      "items": "auto"
+     },
+     {
+      "text": "满意度评价",
+      "collapsed": false,
+      "prefix": "SatisfactionRecordObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "库存批次与序列号",
+    "collapsed": false,
+    "prefix": "BatchAndSerialNumbers",
+    "items": [
+     {
+      "text": "批次",
+      "collapsed": false,
+      "prefix": "BatchObj",
+      "items": "auto"
+     },
+     {
+      "text": "序列号",
+      "collapsed": false,
+      "prefix": "SerialNumberObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "优惠券管理",
+    "collapsed": false,
+    "prefix": "CouponManagement",
+    "items": [
+     {
+      "text": "优惠券方案",
+      "collapsed": false,
+      "prefix": "CouponPlanObj",
+      "items": "auto"
+     },
+     {
+      "text": "优惠券实例",
+      "collapsed": false,
+      "prefix": "CouponInstanceObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "服务技能",
+    "collapsed": false,
+    "prefix": "ServiceSkills",
+    "items": [
+     {
+      "text": "服务技能表",
+      "collapsed": false,
+      "prefix": "EmployeeSkillObj",
+      "items": "auto"
+     },
+     {
+      "text": "服务技能",
+      "collapsed": false,
+      "prefix": "ServiceSkillObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "审批与业务流程",
+    "collapsed": false,
+    "prefix": "ApprovalAndBusiness",
+    "items": [
+     {
+      "text": "审批流程",
+      "collapsed": false,
+      "prefix": "ApprovalTaskObj",
+      "items": "auto"
+     },
+     {
+      "text": "业务流程",
+      "collapsed": false,
+      "prefix": "BpmInstance",
+      "items": "auto"
+     },
+     {
+      "text": "流程任务",
+      "collapsed": false,
+      "prefix": "BpmTaskObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "阶段推进器",
+    "collapsed": false,
+    "prefix": "StagePropeller",
+    "items": [
+     {
+      "text": "阶段推进器",
+      "collapsed": false,
+      "prefix": "stageRuntime",
+      "items": "auto"
+     },
+     {
+      "text": "阶段推进器任务",
+      "collapsed": false,
+      "prefix": "StageTaskObj",
+      "items": "auto"
+     },
+     {
+      "text": "阶段推进器实例",
+      "collapsed": false,
+      "prefix": "StageInstanceObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "目标规则",
+    "collapsed": false,
+    "prefix": "TargetRules",
+    "items": [
+     {
+      "text": "目标子规则",
+      "collapsed": false,
+      "prefix": "GoalRuleObj",
+      "items": "auto"
+     },
+     {
+      "text": "目标规则适用部门",
+      "collapsed": false,
+      "prefix": "GoalRuleApplyCircleObj",
+      "items": "auto"
+     },
+     {
+      "text": "目标值",
+      "collapsed": false,
+      "prefix": "GoalValueObj",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "企业库",
+    "collapsed": false,
+    "prefix": "EnterpriseLibrary",
+    "items": [
+     {
+      "text": "企业库",
+      "collapsed": false,
+      "prefix": "EnterpriseInfoObj",
+      "items": "auto"
+     }
+    ]
+   }
+  ],
+  "prefix": "/object/"
+ },
+ "/common/": {
+  "items": [
+   {
+    "text": "流程与规则",
+    "collapsed": false,
+    "prefix": "process",
+    "items": [
+     {
+      "text": "审批流程",
+      "collapsed": false,
+      "prefix": "approval",
+      "items": "auto"
+     },
+     {
+      "text": "阶段推进器",
+      "collapsed": false,
+      "prefix": "stage",
+      "items": "auto"
+     },
+     {
+      "text": "业务流程",
+      "collapsed": false,
+      "prefix": "flow",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "系统接口",
+    "collapsed": false,
+    "prefix": "system",
+    "items": [
+     {
+      "text": "对象描述",
+      "collapsed": false,
+      "prefix": "object-describe",
+      "items": "auto"
+     },
+     {
+      "text": "自定义函数",
+      "collapsed": false,
+      "prefix": "customize",
+      "items": "auto"
+     },
+     {
+      "text": "解锁与锁定",
+      "collapsed": false,
+      "prefix": "lock",
+      "items": "auto"
+     },
+     {
+      "text": "相关团队",
+      "collapsed": false,
+      "prefix": "team",
+      "items": "auto"
+     },
+     {
+      "text": "币种相关",
+      "collapsed": false,
+      "prefix": "currency",
+      "items": "auto"
+     },
+     {
+      "text": "产品分类",
+      "collapsed": false,
+      "prefix": "product",
+      "items": "auto"
+     },
+     {
+      "text": "其他通用接口",
+      "collapsed": false,
+      "prefix": "other",
+      "items": [
+       {
+        "text": "审批",
+        "collapsed": false,
+        "prefix": "approval",
+        "items": "auto"
+       },
+       {
+        "text": "BI",
+        "collapsed": false,
+        "prefix": "BI",
+        "items": "auto"
+       },
+       {
+        "text": "互联",
+        "collapsed": false,
+        "prefix": "connect",
+        "items": "auto"
+       },
+       {
+        "text": "ERP",
+        "collapsed": false,
+        "prefix": "ERP",
+        "items": "auto"
+       },
+       {
+        "text": "文件",
+        "collapsed": false,
+        "prefix": "file",
+        "items": "auto"
+       },
+       {
+        "text": "物料",
+        "collapsed": false,
+        "prefix": "material",
+        "items": "auto"
+       },
+       {
+        "text": "消息",
+        "collapsed": false,
+        "prefix": "message",
+        "items": "auto"
+       },
+       {
+        "text": "其他",
+        "collapsed": false,
+        "prefix": "other",
+        "items": "auto"
+       },
+       {
+        "text": "任务",
+        "collapsed": false,
+        "prefix": "task",
+        "items": "auto"
+       },
+       {
+        "text": "考勤",
+        "collapsed": false,
+        "prefix": "work",
+        "items": "auto"
+       }
+      ]
+     },
+     {
+      "text": "已弃用接口",
+      "collapsed": false,
+      "prefix": "offline",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "通讯录接口",
+    "collapsed": false,
+    "prefix": "address",
+    "items": [
+     {
+      "text": "人员角色",
+      "collapsed": false,
+      "prefix": "role",
+      "items": "auto"
+     },
+     {
+      "text": "人员",
+      "collapsed": false,
+      "prefix": "member",
+      "items": "auto"
+     },
+     {
+      "text": "用户组",
+      "collapsed": false,
+      "prefix": "user",
+      "items": "auto"
+     }
+    ]
+   },
+   {
+    "text": "客户端开发",
+    "collapsed": false,
+    "prefix": "client",
+    "items": [
+     {
+      "text": "接入指南",
+      "collapsed": false,
+      "prefix": "guide",
+      "items": "auto"
+     },
+     {
+      "text": "JavaScript",
+      "collapsed": false,
+      "prefix": "JS",
+      "items": "auto"
+     },
+     {
+      "text": "UI",
+      "collapsed": false,
+      "prefix": "UI",
+      "items": "auto"
+     }
+    ]
+   }
+  ],
+  "prefix": "/common/"
+ },
+ "/FAQ/": {
+  "items": [
+   "data-not-found",
+   "data-permission",
+   "deep-paging",
+   "query-condition"
+  ],
+  "prefix": "/FAQ/"
+ }
+}

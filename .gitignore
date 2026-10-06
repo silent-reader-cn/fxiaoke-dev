@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# 抓取时自动下载的站点 JS 缓存（app-*.js，1MB+，站点改版即失效）
+js/
+
+# 本机工作状态（项目记忆、项目级技能），不随仓库发布
+.workbuddy-ai/
+.workbuddy/

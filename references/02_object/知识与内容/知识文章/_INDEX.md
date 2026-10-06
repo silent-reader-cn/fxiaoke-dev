@@ -1,0 +1,14 @@
+<!-- 由 scripts/build_index.py 从 Markdown 自动生成，请勿手工编辑 -->
+
+# 对象接口 / 知识与内容/知识文章
+
+共 6 篇。
+
+| 标题 | 接口路径 | 更新时间 |
+| :--- | :--- | :--- |
+| [作废知识文章对象信息](./作废知识文章对象信息.md) | `/object/KnowledgeAndContent/KnowledgeArticleObj/invalid` | 2026-01-16 |
+| [修改知识文章对象信息](./修改知识文章对象信息.md) | `/object/KnowledgeAndContent/KnowledgeArticleObj/update` | 2026-01-16 |
+| [创建知识文章对象](./创建知识文章对象.md) | `/object/KnowledgeAndContent/KnowledgeArticleObj/add` | 2026-01-16 |
+| [删除已作废的知识文章对象](./删除已作废的知识文章对象.md) | `/object/KnowledgeAndContent/KnowledgeArticleObj/delete` | 2026-01-16 |
+| [查询单个知识文章对象](./查询单个知识文章对象.md) | `/object/KnowledgeAndContent/KnowledgeArticleObj/get` | 2026-01-16 |
+| [根据条件查询知识文章对象的列表](./根据条件查询知识文章对象的列表.md) | `/object/KnowledgeAndContent/KnowledgeArticleObj/query` | 2026-01-16 |
